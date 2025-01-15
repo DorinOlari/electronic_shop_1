@@ -1,4 +1,5 @@
 import logo from '../logo/logo.png'
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -31,16 +32,16 @@ const Navbar = () => {
                 {/*Aici este meniul de navigare...*/}
                 <ul className="flex space-x-8">
                     <li>
-                        <a href="/" className="hover:text-white text-2xl m-5">Home</a>
+                        <Link to="/" className="hover:text-white text-2xl m-5">Home</Link>
                     </li>
                     <li>
-                        <a href="/about" className="hover:text-white text-2xl m-5">About</a>
+                        <Link to="/about" className="hover:text-white text-2xl m-5">About</Link>
                     </li>
                     <li>
-                        <a href="/contact" className="hover:text-white text-2xl m-5">Contact</a>
+                        <Link to="/contact" className="hover:text-white text-2xl m-5">Contact</Link>
                     </li>
                     <li>
-                        <a href="/info" className="hover:text-white text-2xl m-5 mr-20">Info</a>
+                        <Link to="/delivery" className="hover:text-white text-2xl m-5 mr-20">Delivery</Link>
                     </li>
                 </ul>
 
